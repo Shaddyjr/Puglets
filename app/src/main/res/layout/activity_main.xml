@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorAccent"
+    >
+
+    <!--HEADER-->
+    <ImageView
+        android:id="@+id/mainBack"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/vibes"
+        android:textSize="40sp"
+        android:background="@color/back"
+        android:padding="8dp"
+        android:layout_alignBottom="@id/mainBack"
+        android:layout_margin="8dp"
+        android:shadowColor="#000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="1.5"
+        />
+
+    <!--HEADER END-->
+
+    <!--MAIN CONTENT-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@color/colorPrimary"
+        android:layout_below="@id/mainBack"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <!--SLOGAN-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/teko"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="12dp"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:lineSpacingExtra="-12sp"
+                android:text="@string/slogan"
+                android:textColor="@color/colorAccent"
+                android:textStyle="italic"
+                />
+
+            <!--INFO-->
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/info"
+            android:text="@string/address"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/info"
+                android:text="@string/hours"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/info"
+                android:text="@string/founder"
+                android:paddingBottom="8dp"
+                />
+
+            <!--DIVIDER-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@color/colorAccent"/>
+            <!--REVIEWS-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:fontFamily="@font/teko"
+                    android:text="@string/reviews"
+                    />
+
+                <!--REVIEW 1-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="16dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="8dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/rating"
+                        android:text="@string/rating"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/review"
+                        android:text="@string/quote1"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/him"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>
+                <!--REVIEW 1 END-->
+
+                <!--REVIEW 2-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="16dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:padding="8dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/rating"
+                        android:text="@string/rating"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        style="@style/review"
+                        android:text="@string/quote2"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/her"
+                        android:layout_gravity="center_vertical"
+                        />
+                </LinearLayout>
+                <!--REVIEW 2 END-->
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <!--MAIN CONTENT END-->
+</RelativeLayout>

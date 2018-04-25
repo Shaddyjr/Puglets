@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Puglets</string>
+    <string name="address">Address: 43 1/64 North Side, Diagon Alley</string>
+    <string name="founder">Founder: Moony Puglet</string>
+    <string name="hours">Hours: Open 24/7</string>
+    <string name="slogan">Are you a wizard on a budget? Can\'t afford a wand made from phoenix feathers? Visit Puglets for all your wand, enchantment, and other mystic needs!</string>
+    <string name="reviews">Reviews</string>
+    <string name="quote1">\"Not bad, if you don\'t mind a wand made of worm wood!\"</string>
+    <string name="rating">1 star</string>
+    <string name="name1">-Hagrid</string>
+    <string name="quote2">\"Go to Ollivanders! They\'re simply better in every possible way.\"</string>
+    <string name="name2">-Hermione</string>
+</resources>
